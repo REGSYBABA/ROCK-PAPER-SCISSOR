@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* footer support */
+    position: relative;
+    min-height: 100%;
+  }
+  
+
+body{
+    font-family: "Lato", sans-serif;
+    height: 100vh;
+    background: linear-gradient( 
+        135deg, 
+        #ffcf1b, 
+        #ff8b1b
+    );
+    /* transition: all .4s ease-in-out; */
+    scroll-behavior: none;
+    overflow: hidden;
+}
+
+header{
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 2rem;
+    
+}
+
+header p{
+    margin-top: 1.5rem;
+}
+
+.container{
+    width: 450px;
+    min-width: 500px;
+    background-color: #fff;
+    padding: 40px 30px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 15px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+    margin-top: 3rem;
+    position: fixed; 
+}
+
+.scores{
+    text-align: right;
+    font-weight: 600;
+    line-height: 2rem;
+}
+
+.icons{
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;   
+}
+
+button{
+    width: 80px;
+    height: 80px;
+    font-size: 30px;
+    border-radius: 50%;
+    outline: none;
+    background-color: #FFd51b;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.choices{
+    text-align: center;
+    margin-top: 2rem;
+    line-height: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 700;
+    font-size: 17px;
+    /* display: none; */
+}
+
+.choosen{
+    font-size: 30px;
+}
+
+.results{
+    margin-top: 2rem;
+    text-align: center;
+    /* font-weight: 600; */
+    font-size: 18px;
+}
+
+button, #play{
+    border: none;
+    
+}
+
+.clicked{
+   transition: all .4s ease-in-out;
+}
+
+.clicked:hover{
+    transform: scale(1.1);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+footer{
+    text-align: center;
+    /* position: relative; */
+    /* margin-top: 650px; */
+    position: absolute;
+    padding: 0;
+    bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+}
+
+footer, .git{
+    cursor: pointer;
+    transition: all .7s ease-in;
+}
+
+.git:hover{
+    transform: scale(1.1);
+}
+
+/* modals */
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 0px auto;
+}
+
+.modal-content{
+    background: #b5a18e;
+    text-align: center;
+    margin: 20% auto;
+    width: 350px;
+    border-radius: 10px;
+    padding: 3rem;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation: modalanim 1s;
+}
+
+.modal-content h1{
+    margin-bottom: 1rem;
+}
+
+.modal-content p{
+    margin-bottom: 1rem;
+}
+
+.modal-content #play{
+    width: 250px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 15px;
+    font-size: 28px;
+    font-weight: bolder;
+    transition: all .4s ease-in-out;
+}
+
+#play:hover{
+    background-color: burlywood;
+    transform: scale(1.1);
+}
+
+@keyframes madalanim {
+    from{
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 601px) {
+    body{
+       height: 100vh;
+    }
+    .container{
+        width: 180px;
+        min-width: 300px;
+        /* margin: 50px auto; */
+        margin-top: 150px;
+    }
+    button{
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    footer{
+        margin-top: 350px;
+    }
+}
