@@ -34,7 +34,6 @@ rockBtn.forEach(button => {
     announceWinner()
 
     button.classList.add('clicked')
-   
     
   })
 })
@@ -136,4 +135,3 @@ function endGame(){
   }
 }
 
-window.onload(modal.style.display = 'none')
