@@ -10,7 +10,7 @@ let scoreEl1 = document.getElementById('score1')
 let scoreEl2 = document.getElementById('score2')
 let modal = document.querySelector('.modal')
 let winEl = document.getElementById('modal-result')
-let playAgain = document.getElementById('play')
+let playAgain = document.getElementById('playing')
 
 rockBtn.forEach(button => {
   button.addEventListener('click', (e) => {
