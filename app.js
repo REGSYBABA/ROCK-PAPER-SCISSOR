@@ -134,5 +134,6 @@ function endGame(){
     document.getElementById('scissors').disabled = true
     modal.style.display = 'block'
   }
-
 }
+
+window.onload(modal.style.display = 'none')
