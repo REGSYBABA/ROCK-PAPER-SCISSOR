@@ -105,7 +105,8 @@ button{
 
 button, #play{
     border: none;
-    
+    width: 150px;
+
 }
 
 .clicked{
@@ -145,7 +146,7 @@ footer, .git{
 
 /* modals */
 .modal{
-    display: none;
+    /* display: none; */
     position: fixed;
     z-index: 1;
     left: 0;
