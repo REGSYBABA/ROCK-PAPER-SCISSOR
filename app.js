@@ -60,7 +60,7 @@ function displayCompChoice(computerSelection){
 function getComputersChoice(){
     const randomIndex = Math.floor(Math.random() * compchoice.length)
     const item = compchoice[randomIndex]
-    console.log(item)
+    // console.log(item)
     return item
 
 }
