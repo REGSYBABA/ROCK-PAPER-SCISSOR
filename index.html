@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCK-PAPER-SCISSORS</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/40fa71cc48.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header>
+        <h1>Rock paper scissors</h1>
+        <p>do you have what it takes to proove human's are smarter</p>
+    </header>
+
+    <div class="container">
+        <div class="scores">
+          <p class="comp-score">Computer score: <span id="score2">0</span></p>
+          <p class="player-sore">Player score: <span id="score1">0</span></p>
+        </div> 
+        
+        <div class="icons">
+            <button id="rock"> <i class="fa-solid fa-hand-back-fist "></i> </button>
+            <button id="paper">  <i class="fa-solid fa-hand "></i> </button>
+            <button id="scissors">  <i class="fa-solid fa-hand-scissors "></i> </button>
+        </div>
+
+        <div class="choices">
+            <p id="p1">Player's choice: <span id="p-choice"></span></p>
+            <p id="p2">Computer's choice: <span id="p-choice"></span></p>
+        </div>
+
+        <div class="choices choosen">
+            <p id="chosen-player">🫠</p>
+            <p id="chosen-comp">🫠</p>
+        </div>
+
+        <div class="results">
+            <p id="p3">Result: <span id="result"></span></p>
+            <!-- <p id="p4">Winner</p> -->
+        </div>   
+    </div>
+
+    <div class="modal">
+        <div id="large" class="modal-content">
+            <h1 id = modal-result>Winner!</h1>
+            <button id="play">Play Again</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>
+          Copyright ©
+          <script>
+            document.write(new Date().getFullYear())
+          </script>
+          Regha
+        </p>
+        <a href="https://github.com/REGSYBABA" target="_blank"></a>
+        <i class="fab fa-github git"></i>
+    </footer>            
+    <script src="/app.js"></script>
+    
+</body>
+</html>
